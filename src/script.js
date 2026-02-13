@@ -67,6 +67,8 @@ const animatedSections = Array.from(
   document.querySelectorAll("[data-animate='true'] .content"),
 );
 const postcard = document.querySelector(".postcard");
+const valentineTitle = document.querySelector(".valentine-title");
+const giftReveal = document.querySelector(".gift-reveal");
 
 if (!prefersReducedMotion && hero) {
   gsap.fromTo(
@@ -145,6 +147,16 @@ const revealPostcard = () => {
   postcard.classList.add("is-visible");
   postcard.setAttribute("aria-hidden", "false");
 };
+
+const revealGift = () => {
+  if (!giftReveal) return;
+  giftReveal.classList.add("is-visible");
+  giftReveal.setAttribute("aria-hidden", "false");
+};
+
+if (valentineTitle) {
+  valentineTitle.addEventListener("dblclick", revealGift);
+}
 
 const setScrollProgress = () => {
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;

@@ -135,6 +135,10 @@ h2 {
   font-size: clamp(2rem, 5vw, 3.8rem);
 }
 
+.valentine-title {
+  cursor: default;
+}
+
 .line {
   display: block;
 }
@@ -167,6 +171,54 @@ body.show-ps .ps {
 
 .finale {
   padding-bottom: clamp(4rem, 10vw, 8rem);
+}
+
+.gift-reveal {
+  max-height: 0;
+  margin-top: 0;
+  opacity: 0;
+  transform: translateY(12px);
+  overflow: hidden;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    max-height 0.8s ease,
+    margin-top 0.8s ease;
+  pointer-events: none;
+}
+
+.gift-reveal.is-visible {
+  max-height: 2000px;
+  margin-top: 2rem;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.gift-note {
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  color: var(--muted);
+}
+
+.gift-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.4rem;
+}
+
+.gift-card {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.gift-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(17, 17, 17, 0.12);
+  display: block;
 }
 
 .sound-toggle {
@@ -383,6 +435,10 @@ body.secret-unlocked .secret {
   }
 
   .postcard {
+    transition: none;
+  }
+
+  .gift-reveal {
     transition: none;
   }
 
