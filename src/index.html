@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>If Love Had a Website</title>
+    <meta name="description" content="A calm, deliberate Valentine page." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="is-locked">
+    <button class="sound-toggle" type="button" aria-pressed="false">
+      <span class="sound-label">Sound off</span>
+      <span class="music-heart" aria-hidden="true"></span>
+    </button>
+
+    <audio id="bg-music" loop preload="none">
+      <source
+        src="../public/audio/Taylor%20Swift%20-%20Dress%20(Lyrics).mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient-gradient"></div>
+      <div class="scroll-line"></div>
+      <div class="sprinkles">
+        <span
+          class="sprinkle"
+          style="--size: 8px; --x: 12%; --y: 14%; --delay: 0s; --dur: 34s"
+        ></span>
+        <span
+          class="sprinkle"
+          style="--size: 10px; --x: 78%; --y: 18%; --delay: -8s; --dur: 42s"
+        ></span>
+        <span
+          class="sprinkle"
+          style="--size: 7px; --x: 64%; --y: 38%; --delay: -16s; --dur: 38s"
+        ></span>
+        <span
+          class="sprinkle"
+          style="--size: 12px; --x: 22%; --y: 52%; --delay: -22s; --dur: 45s"
+        ></span>
+        <span
+          class="sprinkle"
+          style="--size: 9px; --x: 84%; --y: 62%; --delay: -12s; --dur: 40s"
+        ></span>
+        <span
+          class="sprinkle"
+          style="--size: 6px; --x: 38%; --y: 78%; --delay: -18s; --dur: 36s"
+        ></span>
+      </div>
+    </div>
+
+    <main>
+      <section class="panel hero" data-animate="hero">
+        <div class="content">
+          <p class="eyebrow">If Love Had a Website</p>
+          <h1>
+            <span class="line">If love had a website,</span>
+            <span class="line">this would be it.</span>
+          </h1>
+          <p class="sub">Built for you.</p>
+        </div>
+      </section>
+
+      <section class="panel" data-animate="true">
+        <div class="content">
+          <h2>
+            <span class="line">I don’t love you loudly.</span>
+            <span class="line">I love you truly.</span>
+          </h2>
+        </div>
+      </section>
+
+      <section class="panel" data-animate="true">
+        <div class="content">
+          <h2>
+            <span class="line">You feel like home</span>
+            <span class="line">in a world that never slows down.</span>
+          </h2>
+        </div>
+      </section>
+
+      <section class="panel" data-animate="true">
+        <div class="content">
+          <h2>
+            <span class="line">Even on the days I’m quiet,</span>
+            <span class="line">I’m choosing you.</span>
+          </h2>
+        </div>
+      </section>
+
+      <section class="panel" data-animate="true">
+        <div class="content">
+          <h2>
+            <span class="line">This isn’t perfect love.</span>
+            <span class="line">It’s honest. And it’s mine.</span>
+          </h2>
+        </div>
+      </section>
+
+      <section class="panel" data-animate="true" data-pace="slow">
+        <div class="content">
+          <h2>
+            <span class="line">I built this because</span>
+            <span class="line">“I love you” didn’t feel like enough.</span>
+          </h2>
+        </div>
+      </section>
+
+      <section class="panel finale" data-animate="false">
+        <div class="content">
+          <h2>
+            <span class="line">Happy Valentine’s Day.</span>
+          </h2>
+          <p class="sub">Always you, baby.</p>
+          <p class="signature">— Baobun</p>
+          <p class="ps">P.S. You’re my favorite person.</p>
+        </div>
+      </section>
+
+      <section class="panel secret" data-secret aria-hidden="true">
+        <div class="content">
+          <p class="eyebrow">Secret</p>
+          <h2>
+            <span class="line">You came back for more.</span>
+            <span class="line">So did I.</span>
+          </h2>
+          <div class="secret-actions">
+            <a
+              class="btn"
+              href="https://open.spotify.com/playlist/6i6AfYn8ztuYLACsQHLydT?si=xCzczj_BTVOLnc3hrlOE-A&pi=Lxdi5aiwQAuXM"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open our playlist
+            </a>
+          </div>
+          <figure class="postcard" aria-hidden="true">
+            <img
+              src="../public/images/london_autumn_20260208_114148.png"
+              alt="A postcard memory"
+              loading="lazy"
+            />
+            <figcaption>
+              <span>Keep this.</span>
+              <a
+                class="btn ghost"
+                href="../public/images/london_autumn_20260208_114148.png"
+                download
+              >
+                Download postcard
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
